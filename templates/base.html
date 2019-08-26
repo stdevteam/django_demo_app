@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>
+        {% block title %}
+
+        {% endblock title %}
+    </title>
+
+    {% block extra_styles %}
+    {% endblock extra_styles %}
+
+</head>
+
+<body>
+    <a href="{% url "view1" %}">view1</a>
+    <a href="{% url "view2" %}">view2</a> <br>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

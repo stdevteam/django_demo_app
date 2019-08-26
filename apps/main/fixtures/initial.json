@@ -1,0 +1,48 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "user1",
+      "password": "pbkdf2_sha256$150000$R2C59pPhwNuY$8DTQtcBFX/8gFlhVaKGLYDtHSxZ9HzgBJs74Xv81mtk="
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "username": "user2",
+      "password": "pbkdf2_sha256$150000$R2C59pPhwNuY$8DTQtcBFX/8gFlhVaKGLYDtHSxZ9HzgBJs74Xv81mtk="
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "group1"
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "group2"
+    }
+  },
+  {
+    "model": "auth.user_groups",
+    "pk": 1,
+    "fields": {
+      "user_id": 3,
+      "group_id": 1
+    }
+  },
+  {
+    "model": "auth.user_groups",
+    "pk": 2,
+    "fields": {
+      "user_id": 4,
+      "group_id": 2
+    }
+  }
+]
